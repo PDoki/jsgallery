@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="luxury in images">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="cocktail.ico">
+  <title>Dolce Gallery</title>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #daeefc;">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Dolce <i class="fas fa-cocktail" style="color: darkblue;"></i>
+          Gallery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Contacts</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <main class="mt-5">
+    <div class="container">
+      <br>
+      <h2>Few words about this gallery</h2>
+      <div class="row">
+        <div class="col">
+          <div id="randPics">
+          </div>
+          <div class="text">
+            <p>
+              This gallery would not have happened without a huge amount of support and guidance from my teacher Shlomi
+              Lahav, who believes in me even when I don't.<br>
+              I also wish to express my special gratitude to my dear friend Michal for the inspiration throughout the
+              project. My exceptional acknowledgments to my friends and colleagues, Ariel, Vita, and Alice, who didn't
+              allow me to get off the track.
+            </p>
+            <p>
+              Icons used in this gallery are made by <a href="https://fontawesome.com/">fontawesome.com</a> andIcons
+              made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                title="Flaticon">www.flaticon.com</a>
+              is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                target="_blank">CC 3.0 BY</a>
+              The quotes presented in the gallery are provided by
+              <a href="https://www.brainyquote.com">brainyquote.com</a>
+              <a href="http://www.bakerella.com/cake-pops-an-adventure/">bakerella.com</a>
+              <a href="http://www.luzdelaluna.net">luzdelaluna.net</a>
+              All the pictures used in the gallery were downloaded from <a href="http://www.pixabay.com">pixabay.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <br>
+  <br>
+
+  <footer class="footer footer-light fixed-bottom text-center mt-5" style="background-color: #daeefc;">
+    <div class="contaner">
+      <span class="text-muted">Dolce <i class="fas fa-cocktail" style="color: darkblue;"></i> Gallary &copy; 2018 |
+        Polina Dk</span>
+
+    </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- <script src="js/pictures.js"></script>
+  <script src="js/script.js"></script> -->
+  <script>
+    function randPic() {
+      var pic = ["images/cupcake-4.jpg", "images/strudel-1.jpg", "images/puff-pastry-2.jpg", "images/camomile-tea.jpg", "images/black-coffee.jpg"];
+      var str = '';
+      var num = pic[Math.floor(Math.random() * pic.length)];
+      //alert(num);
+      str += '<img class = \"rounded bordred\"width=\"60%\" style = \"float: right\" src="' + num + '">';
+      //console.log(str);
+      //Here I first tried to make it with querySelector() as Itamar had taught us but it didn't work
+      document.getElementById("randPics").innerHTML = str;
+    }
+    randPic();
+  </script>
+
+</body>
+
+</html>

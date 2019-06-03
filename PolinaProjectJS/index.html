@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="luxury in images">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="cocktail.ico">
+    <title>Dolce Gallery</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #daeefc;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Dolce <i class="fas fa-cocktail" style="color: darkblue;"></i>
+                    Gallery</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main class="mt-5">
+        <section id="filter-gallery">
+            <div class="container-fluid shadow-sm pt-5 pb-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <input class="form-control form-control-lg" placeholder="Write here what you are looking for"
+                                    type="text" name="search_name" id="seach-name">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <a data-toggle="collapse" class="btn text-muted" href="#TrymeOptions" style="float:right"><i
+                                    class="fas fa-filter"></i>Try me</a>
+                        </div>
+                    </div>
+                    <div class="row collapse mt-4" id="TrymeOptions">
+                        <div class="col-md-9">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link btn btn-outline-primary filter-by-category">All</a>
+                                </li>
+                                &nbsp;
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link btn btn-outline-info filter-by-category">Cake</a>
+                                </li>
+                                &nbsp;
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link btn btn-outline-info filter-by-category">Cake Pops</a>
+                                </li>
+                                &nbsp;
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link btn btn-outline-info filter-by-category">Cupcakes</a>
+                                </li>
+                                &nbsp;
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link btn btn-outline-info filter-by-category">Tarts</a>
+                                </li>
+                                &nbsp;
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link btn btn-outline-info filter-by-category">Strudel</a>
+                                </li>
+                                &nbsp;
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link btn btn-outline-info filter-by-category">Puff Pastry</a>
+                                </li>
+                                &nbsp;
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link btn btn-outline-warning filter-by-category">Tea</a>
+                                </li>
+                                &nbsp;
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link btn btn-outline-warning filter-by-category">Coffee</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <select class="form-control form-control-lg" id="sort">
+                                    <option value="">Sort by ...</option>
+                                    <option value="asc">From A to Z</option>
+                                    <option value="desc">From Z to A</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="dolce_gallary">
+            <div class="container">
+                <div class="row" id="representationContainer"></div>
+            </div>
+        </section>
+
+    </main>
+    <button id="upBtn" class="btn btn-outline-info rounded" type="button"><i class="fas fa-arrow-circle-up"></i></button>
+    <br>
+    <br>
+    <br>
+
+
+    <footer class="footer footer-light fixed-bottom text-center mt-5" style="background-color: #daeefc;">
+        <div class="contaner">
+            <span class="text-muted">Dolce <i class="fas fa-cocktail" style="color: darkblue;"></i> Gallary &copy; 2018
+                | Polina Dk</span>
+
+        </div>
+
+    </footer>
+
+    <div id="preloader" style="display: none">
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/pictures.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
